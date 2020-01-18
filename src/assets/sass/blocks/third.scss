@@ -1,0 +1,160 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.25;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    table-layout: fixed;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    border-radius: $radius;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: 0.5em 0 0.75em;
+}
+
+#usersTable {
+    background: rgba($color: #121315, $alpha: 0.8);
+    border-radius: $radius;
+    color: #969694;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+table tr {
+    padding: 0.35em;
+}
+
+table th,
+table td {
+    padding: 0.625em;
+    text-align: center;
+    width: 15%;
+}
+
+table th {
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table caption {
+        font-size: 1.3em;
+    }
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+.edit {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #8f8989;
+    &:hover {
+        color: #b8b2b2;
+        cursor: pointer;
+    }
+}
+
+.delete {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(233, 34, 34);
+    &:hover {
+        color: rgb(253, 45, 45);
+        cursor: pointer;
+    }
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 1000px;
+}
+
+table {
+    display: grid;
+}
+
+.input__block {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    &>input {
+        padding: .8rem;
+        margin: .8rem;
+    }
+    &>button {
+        padding: 5px;
+        margin: 0 15px;
+    }
+}
+
+.thirdForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+    min-width: 1000px;
+    &>input {
+        padding: 5px;
+        margin: 0.5rem;
+    }
+    &>button {
+        padding: 5px;
+        margin: 0 15px;
+    }
+}
+
+#sbmAdd {
+    padding: .8rem;
+}
+
+#delSelRows {
+    padding: .8rem;
+    font-size: .8rem;
+}

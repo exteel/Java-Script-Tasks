@@ -1,0 +1,27 @@
+<div class="main__title">
+    <h1 class="title">Task 3</h1>
+</div>
+
+<form class="thirdForm" onsubmit="return validateForm(this)">
+    <div class="input__block">
+
+        <label for="firstName">Your first name</label>
+        <input id="firstName" type="text" placeholder="First Name" />
+    </div>
+
+    <div class="input__block">
+        <label for="lastName">Your second name</label>
+        <input id="lastName" type="text" placeholder="Second Name" />
+    </div>
+    <div class="input__block">
+        <label for="email">Your email</label>
+        <input id="email" type="email" name="email" placeholder="Email" onblur="validateEmail(this.value);" />
+    </div>
+
+
+    <button type="submit" id="sbmAdd" value="Add" class="sssd">Add</button>
+
+    <button id="delSelRows">Delete Selected Rows</button>
+</form>
+
+<table id="usersTable" class="table"></table>

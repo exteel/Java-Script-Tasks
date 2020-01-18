@@ -1,0 +1,25 @@
+.main__title {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border: 1px solid $black;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+
+    &>input {
+        padding: 5px;
+        margin: 1rem 0;
+    }
+
+    &>label {
+        font-weight: bold;
+    }
+}
