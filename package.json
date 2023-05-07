@@ -4,7 +4,7 @@
     "description": "project using gulp4",
     "author": "Dmitrijs Valaks",
     "devDependencies": {
-        "browser-sync": "^2.26.3",
+        "browser-sync": "^2.29.1",
         "del": "^4.1.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.0.0",
